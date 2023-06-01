@@ -10,8 +10,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        bg: "hsl(270deg 3% 85%)",
+      colors: {
+        gray: "hsl(270deg 3% 85%)",
         tertiary: "hsl(0deg 0% 100%)",
         secondary: "hsl(209deg 10% 50%)",
         primary: "hsl(320deg 9% 7%)",
@@ -19,7 +19,7 @@ module.exports = {
         fast: "hsl(0deg 0% 100%)",
         normal: "hsl(209deg 10% 80%)",
         slow: "hsl(19deg 97% 57%)",
-      }
+      },
     },
   },
   plugins: [],
