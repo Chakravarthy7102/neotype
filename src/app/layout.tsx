@@ -19,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={classNames(inter.className, "bg-gray max-w-4xl p-10 mx-auto")}>
+      <body
+        suppressHydrationWarning={true}
+        className={classNames(
+          inter.className,
+          "bg-gray max-w-4xl p-10 mx-auto"
+        )}
+      >
         <Navbar />
         {children}
         <Footer />
