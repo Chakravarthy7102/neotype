@@ -1,22 +1,29 @@
-import classNames from 'classnames'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import classNames from "classnames";
+import { Inter } from "next/font/google";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'neotype',
-  description: 'A next generation typing app',
-}
+  title: "neotype",
+  description: "A next generation typing app",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={classNames(inter.className,"bg-gray")}>{children}</body>
+      <body className={classNames(inter.className, "bg-gray max-w-4xl p-10 mx-auto")}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
